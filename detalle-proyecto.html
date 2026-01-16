@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Proyecto 1: Centro organizacional de altos estudios y cualificación del talento humano, como escenario para forjar el legado y relevo generacional hacia procesos de transformación e innovación educativa</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+<style>
+
+/* ================== COLORES POR EJE ================== */
+.eje1 {
+  --color-eje: #0b3c5d;
+  --color-acento: #1f6aa5;
+}
+
+/* ================== CABECERA ================== */
+.cabecera-editorial {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.cabecera-editorial .overlay {
+  background: rgba(0,0,0,0.55);
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+.cabecera-editorial h2 {
+  color: white;
+  font-size: 28px;
+}
+
+/* ================== CONTENIDO ================== */
+.detalle-proyecto h1 {
+  color: var(--color-eje);
+  border-bottom: 4px solid var(--color-acento);
+  padding-bottom: 10px;
+}
+
+.detalle-seccion {
+  margin-top: 35px;
+}
+
+.detalle-seccion h3 {
+  color: var(--color-eje);
+  margin-bottom: 10px;
+}
+
+/* TEXTOS */
+.texto-una-columna {
+  line-height: 1.7;
+}
+
+.texto-dos-columnas {
+  column-count: 2;
+  column-gap: 40px;
+  line-height: 1.7;
+}
+
+/* BLOQUE DESTACADO */
+.bloque-destacado {
+  background: rgba(0,0,0,0.04);
+  border-left: 6px solid var(--color-acento);
+  padding: 20px;
+  margin: 30px 0;
+  font-style: italic;
+}
+
+/* BOTÓN */
+.btn-detalle {
+  background: var(--color-acento);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+/* VIDEO */
+.video-seccion iframe {
+  width: 100%;
+  height: 360px;
+  border-radius: 10px;
+}
+
+/* ================== MODAL ================== */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-contenido {
+  background: white;
+  max-width: 700px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .texto-dos-columnas {
+    column-count: 1;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================== MENÚ ================== -->
+<nav class="menu-principal">
+  <div class="menu-contenedor">
+    <div class="menu-logo">
+      <img src="imagenes/logo-unad.png" alt="UNAD">
+    </div>
+    <div class="menu-links">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="index.html#eje1">Eje 1</a>
+      <a href="index.html#eje2">Eje 2</a>
+      <a href="index.html#eje3">Eje 3</a>
+      <a href="index.html#eje4">Eje 4</a>
+      <a href="index.html#eje5">Eficiencia</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================== CONTENIDO ================== -->
+<section class="pagina detalle-proyecto eje1">
+
+  <!-- CABECERA DEL EJE -->
+  <div class="cabecera-editorial" style="background-image:url('imagenes/eje1.jpg')">
+   
+  </div>
+
+  <h1>Proyecto 1 Centro organizacional de altos estudios y cualificación del talento humano, como escenario para forjar el legado y relevo generacional hacia procesos de transformación e innovación educativa</h1>
+  <!-- UNA COLUMNA -->
+  <div class="detalle-seccion">
+    <p class="texto-una-columna">
+      Ejemplo texto ejemplo texto ejemplo texto ejemplo texto ejemplo texto.
+      Ejemplo texto ejemplo texto ejemplo texto ejemplo texto. 
+	  Ejemplo texto ejemplo texto ejemplo texto ejemplo texto.
+    </p>
+  </div>
+  <!-- UNA COLUMNA -->
+  <div class="detalle-seccion">
+    <h3>Descripción general</h3>
+    <p class="texto-una-columna">
+      Ejemplo texto ejemplo texto ejemplo texto ejemplo texto ejemplo texto.
+      Ejemplo texto ejemplo texto ejemplo texto ejemplo texto. 
+	  Ejemplo texto ejemplo texto ejemplo texto ejemplo texto.
+    </p>
+  </div>
+
+  <!-- BLOQUE DESTACADO -->
+  <div class="bloque-destacado">
+    Este proyecto consolida como..........
+  </div>
+
+  <!-- DOS COLUMNAS -->
+  <div class="detalle-seccion">
+    <h3>ejemplo titulo</h3>
+    <div class="texto-dos-columnas">
+      Ejemplo texto ejemplo texto ejemplo texto ejemplo texto ejemplo texto.
+      Ejemplo texto ejemplo texto ejemplo texto ejemplo texto ejemplo texto.
+      Ejemplo texto ejemplo texto ejemplo texto ejemplo texto ejemplo texto.
+	  Ejemplo texto ejemplo texto ejemplo texto ejemplo texto ejemplo texto.
+	  Ejemplo texto ejemplo texto ejemplo texto ejemplo texto ejemplo texto.
+	  Ejemplo texto ejemplo texto ejemplo texto ejemplo texto ejemplo texto.
+    </div>
+
+    <span class="btn-detalle"
+      onclick="abrirModal(
+        'titulo  ',
+        'Ejemplo texto ejemplo texto ejemplo texto ejemplo texto ejemplo texto.  Ejemplo texto ejemplo texto ejemplo texto ejemplo texto ejemplo texto.  Ejemplo texto ejemplo texto ejemplo texto ejemplo texto ejemplo texto.'
+      )">
+      Ver más
+    </span>
+  </div>
+
+  <!-- VIDEO -->
+  <div class="detalle-seccion">
+    <h3>Video</h3>
+    <div class="video-seccion">
+	<iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/382Zu1DxY5s" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+</iframe>
+   </div>
+  </div>
+
+  <a href="index.html#eje1" class="btn-detalle">← Volver al eje</a>
+
+</section>
+
+<!-- ================== MODAL ================== -->
+<div id="modal" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal()">✕</span>
+    <h3 id="modalTitulo"></h3>
+    <p id="modalTexto"></p>
+  </div>
+</div>
+
+<script>
+function abrirModal(titulo, texto) {
+  document.getElementById("modalTitulo").innerText = titulo;
+  document.getElementById("modalTexto").innerText = texto;
+  document.getElementById("modal").style.display = "flex";
+}
+
+function cerrarModal() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
